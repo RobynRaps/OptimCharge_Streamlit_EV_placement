@@ -104,9 +104,9 @@ def ev_user_environmental_impact():
 
 # --- Data Loading ---
 # File paths
-emissions_data_path = (r"C:/Users/robyn/Downloads/OptimCharge_Streamlit_EV_placement/emmissions .xlsx")
-charging_data_path = (r"C:/Users/robyn/Downloads/OptimCharge_Streamlit_EV_placement/Charging_Stations.xlsx")
-population_data_path = (r"C:/Users/robyn/Downloads/OptimCharge_Streamlit_EV_placement/young_pop.xlsx")
+emissions_data_path = (r"emmissions .xlsx")
+charging_data_path = (r"Charging_Stations.xlsx")
+population_data_path = (r"young_pop.xlsx")
 
 # Loading data with required columns
 emissions_data = load_data(emissions_data_path, ["latitude", "longitude", "CarbonMonoxide_H2O_column_number_density"])
