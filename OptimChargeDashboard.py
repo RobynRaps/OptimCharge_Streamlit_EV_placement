@@ -181,7 +181,7 @@ else:
         else:
             if user_role == "Client":
                 st.write("Filter stations by status:")
-                status_filter = st.selectbox("Station Status", ["All", "Operational", "Under Construction"])
+                status_filter = st.selectbox("Station Status", ["All", "Operational", "Under Construction","Planned","Awaiting Contract","Pending Site Visit"])
                 filtered_data = charging_data if status_filter == "All" else charging_data[charging_data["Status"] == status_filter]
                 st.write(filtered_data[["Connector Name", "Status", "Latitude", "Longitude", "Sales Revenue (RWF)"]])
                 display_station_map(filtered_data)
