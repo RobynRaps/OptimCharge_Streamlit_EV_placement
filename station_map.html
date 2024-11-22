@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b31a02bc70515bbb27ecc06df52aee15 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b31a02bc70515bbb27ecc06df52aee15" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b31a02bc70515bbb27ecc06df52aee15 = L.map(
+                "map_b31a02bc70515bbb27ecc06df52aee15",
+                {
+                    center: [-1.95, 30.06],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_886dee73930857e1b0118e798ecf1a3c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_886dee73930857e1b0118e798ecf1a3c.addTo(map_b31a02bc70515bbb27ecc06df52aee15);
+        
+    
+            var marker_cluster_e2681f79040352c3d7e4a43b3eda9303 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_3130a6c7e336fe90bdc4a32071170cc2 = L.marker(
+                [-1.5018652, 29.6341794],
+                {}
+            ).addTo(marker_cluster_e2681f79040352c3d7e4a43b3eda9303);
+        
+    
+        var popup_fbc26b7362ac3ea9d1cfccd8354b6f6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2dffca495d0218a51a43cd8afa01365b = $(`<div id="html_2dffca495d0218a51a43cd8afa01365b" style="width: 100.0%; height: 100.0%;">Station: Sina Gerard/Ese Urwibutso Headquarters (Nyirangarama), Status: Under-Construction</div>`)[0];
+                popup_fbc26b7362ac3ea9d1cfccd8354b6f6e.setContent(html_2dffca495d0218a51a43cd8afa01365b);
+            
+        
+
+        marker_3130a6c7e336fe90bdc4a32071170cc2.bindPopup(popup_fbc26b7362ac3ea9d1cfccd8354b6f6e)
+        ;
+
+        
+    
+    
+            var marker_20ab344aeb9fbe239d975f0a3f1afe77 = L.marker(
+                [-1.548427424670963, 30.0594078949932],
+                {}
+            ).addTo(marker_cluster_e2681f79040352c3d7e4a43b3eda9303);
+        
+    
+        var popup_c606504e4031396ea5e9ccb9b5e2e113 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ba0e6549da74ae37a62e9a578fff58a = $(`<div id="html_3ba0e6549da74ae37a62e9a578fff58a" style="width: 100.0%; height: 100.0%;">Station: Gatuna Border Post Rwanda, Status: Under-Construction</div>`)[0];
+                popup_c606504e4031396ea5e9ccb9b5e2e113.setContent(html_3ba0e6549da74ae37a62e9a578fff58a);
+            
+        
+
+        marker_20ab344aeb9fbe239d975f0a3f1afe77.bindPopup(popup_c606504e4031396ea5e9ccb9b5e2e113)
+        ;
+
+        
+    
+    
+            var marker_a4b5ba86c28e75ec89fbd115964eb6c7 = L.marker(
+                [-1.9124091, 30.0815364],
+                {}
+            ).addTo(marker_cluster_e2681f79040352c3d7e4a43b3eda9303);
+        
+    
+        var popup_167428d0d52d11c3d4a10fa3040d8916 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27ff7e35cffeeb741696164c6f81fb21 = $(`<div id="html_27ff7e35cffeeb741696164c6f81fb21" style="width: 100.0%; height: 100.0%;">Station: Shyrongi - The Stop, Status: Operational</div>`)[0];
+                popup_167428d0d52d11c3d4a10fa3040d8916.setContent(html_27ff7e35cffeeb741696164c6f81fb21);
+            
+        
+
+        marker_a4b5ba86c28e75ec89fbd115964eb6c7.bindPopup(popup_167428d0d52d11c3d4a10fa3040d8916)
+        ;
+
+        
+    
+    
+            var marker_435e8a9130919cb3fba5da75eb5abd5e = L.marker(
+                [-1.9496678, 30.058197],
+                {}
+            ).addTo(marker_cluster_e2681f79040352c3d7e4a43b3eda9303);
+        
+    
+        var popup_098983aee863c8815d0b333fa3384654 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e527656dcd64bba42a0928d14d432bae = $(`<div id="html_e527656dcd64bba42a0928d14d432bae" style="width: 100.0%; height: 100.0%;">Station: Kigali - Norrsken House Kigali, Status: Operational</div>`)[0];
+                popup_098983aee863c8815d0b333fa3384654.setContent(html_e527656dcd64bba42a0928d14d432bae);
+            
+        
+
+        marker_435e8a9130919cb3fba5da75eb5abd5e.bindPopup(popup_098983aee863c8815d0b333fa3384654)
+        ;
+
+        
+    
+    
+            var marker_d4b04b45681cdbe0afd065a0b93dab59 = L.marker(
+                [-1.962832459915415, 30.07018974103063],
+                {}
+            ).addTo(marker_cluster_e2681f79040352c3d7e4a43b3eda9303);
+        
+    
+        var popup_7c08a410a847ac14a984cdaa32deaba8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_034d6b1f39639999ba22285f1beccaa6 = $(`<div id="html_034d6b1f39639999ba22285f1beccaa6" style="width: 100.0%; height: 100.0%;">Station: SP Rugunga, Status: Operational</div>`)[0];
+                popup_7c08a410a847ac14a984cdaa32deaba8.setContent(html_034d6b1f39639999ba22285f1beccaa6);
+            
+        
+
+        marker_d4b04b45681cdbe0afd065a0b93dab59.bindPopup(popup_7c08a410a847ac14a984cdaa32deaba8)
+        ;
+
+        
+    
+    
+            var marker_0dcdd63bf712d3e55a19d17aba1ad5ea = L.marker(
+                [-1.9593398, 30.1168868],
+                {}
+            ).addTo(marker_cluster_e2681f79040352c3d7e4a43b3eda9303);
+        
+    
+        var popup_208540b97b0a96e2278545e6209ebb0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f65a60599c45d6bd062bb6e79447158 = $(`<div id="html_9f65a60599c45d6bd062bb6e79447158" style="width: 100.0%; height: 100.0%;">Station: Mundi Centre, Status: Operational</div>`)[0];
+                popup_208540b97b0a96e2278545e6209ebb0c.setContent(html_9f65a60599c45d6bd062bb6e79447158);
+            
+        
+
+        marker_0dcdd63bf712d3e55a19d17aba1ad5ea.bindPopup(popup_208540b97b0a96e2278545e6209ebb0c)
+        ;
+
+        
+    
+    
+            var marker_a73e4358dffdc3c06a2b2d019f1165db = L.marker(
+                [-1.9274993, 30.09840744227723],
+                {}
+            ).addTo(marker_cluster_e2681f79040352c3d7e4a43b3eda9303);
+        
+    
+        var popup_fa5dd0a7ab7b367dea8c485619191256 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7302e01a34c56028befc9dde2476b077 = $(`<div id="html_7302e01a34c56028befc9dde2476b077" style="width: 100.0%; height: 100.0%;">Station: Kab-Izi SuperCharger - Century Park, Status: Operational</div>`)[0];
+                popup_fa5dd0a7ab7b367dea8c485619191256.setContent(html_7302e01a34c56028befc9dde2476b077);
+            
+        
+
+        marker_a73e4358dffdc3c06a2b2d019f1165db.bindPopup(popup_fa5dd0a7ab7b367dea8c485619191256)
+        ;
+
+        
+    
+    
+            var marker_ee75f1317ac0b41406af0d2854f0e311 = L.marker(
+                [-1.97884070439084, 30.13454313361258],
+                {}
+            ).addTo(marker_cluster_e2681f79040352c3d7e4a43b3eda9303);
+        
+    
+        var popup_e90388d7e4897f26c18d5778813487bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4870fcf55d71febacaa37ca404b7daa4 = $(`<div id="html_4870fcf55d71febacaa37ca404b7daa4" style="width: 100.0%; height: 100.0%;">Station: Kanombe SP, Status: Operational</div>`)[0];
+                popup_e90388d7e4897f26c18d5778813487bc.setContent(html_4870fcf55d71febacaa37ca404b7daa4);
+            
+        
+
+        marker_ee75f1317ac0b41406af0d2854f0e311.bindPopup(popup_e90388d7e4897f26c18d5778813487bc)
+        ;
+
+        
+    
+    
+            marker_cluster_e2681f79040352c3d7e4a43b3eda9303.addTo(map_b31a02bc70515bbb27ecc06df52aee15);
+        
+</script>
+</html>
